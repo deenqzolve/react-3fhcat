@@ -1,0 +1,13 @@
+h1, p {
+  font-family: Lato;
+}
+._1OmBB thead tr
+{
+  background-color: gray;
+  color:white;
+}
+
+
+._1OmBB thead th:hover {
+    background-color: #a8a6a6;
+    }
