@@ -4,6 +4,7 @@ import axios from "axios";
 import ReactFlexyTable from "react-flexy-table"
 import "react-flexy-table/dist/index.css"
 
+
 class Responce extends React.Component {
 
 constructor(props) {
@@ -35,11 +36,11 @@ componentWillMount(){
       <div>
 
 
-   <ReactFlexyTable data={this.state.posts}  sortable  filterable/>
+ 
 
 
 
-      /*<table className="table table-striped">
+      <table className="table table-striped">
         <tr>
           <th> Id
           </th>
@@ -61,7 +62,7 @@ componentWillMount(){
           } 
          )}
         
-      </table>*/
+      </table>
 
       </div>
     );
