@@ -38,6 +38,7 @@
     "react-redux": "7.2.2",
     "react-router-dom": "5.2.0",
     "react-shopping-cart": "1.9.4",
+    "react-use-paging": "^1.0.7",
     "redux": "4.0.5",
     "styled-components": "5.2.1"
   },
