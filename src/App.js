@@ -6,6 +6,7 @@ import Ids from "./Ids";
 import Responce from "./Responce";
 import Post from "./Post";
 import Not from "./Not";
+import Cart from "./Cart";
 
 import {
   BrowserRouter as Router,
@@ -49,6 +50,14 @@ export default function App() {
               <NavLink className="nav-link"  to="/post"> Post</NavLink>
            
                 </li>
+
+                 <li className="nav-item">
+
+              <NavLink className="nav-link"  to="/cart"> Cart</NavLink>
+           
+                </li>
+
+                
         </ul>
         <Switch>
           <Route path="/" exact component={Home} />
@@ -56,6 +65,7 @@ export default function App() {
           <Route path="/id/:id" component={Ids} />
           <Route path="/responce" component={Responce} />
           <Route path="/post" component={Post} />
+          <Route path="/cart" component={Cart} />
           <Route component={Not} />
         </Switch>
       </Router>
