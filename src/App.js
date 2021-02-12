@@ -56,6 +56,14 @@ export default function App() {
               <NavLink className="nav-link"  to="/cart"> Cart</NavLink>
            
                 </li>
+                <menu-system initially-hidden sticky>
+  <menu-display>
+
+    <shopper-button slot="button"></shopper-button>
+    <shopper-cart></shopper-cart>
+
+  </menu-display>
+</menu-system>
 
                 
         </ul>
