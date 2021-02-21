@@ -4,6 +4,12 @@ import ReactFlexyTable from "react-flexy-table";
 import "react-flexy-table/dist/index.css";
 import { MDBDataTable } from 'mdbreact';
 
+
+var $       = require( 'jquery' );
+var dt      = require( 'datatables.net' )();
+var buttons = require( 'datatables.net-buttons' )();
+
+
 class Responce extends React.Component {
   constructor(props) {
     super(props);
@@ -26,9 +32,9 @@ class Responce extends React.Component {
     // console.log(this.props);
     return (
       <div>
-        <MDBDataTable data="https://jsonplaceholder.typicode.com/posts" />
+     
 
-        <table className="table table-striped">
+        <table className="table table-striped" id="example">
         <thead>
           <tr>
             <th> Id</th>
@@ -48,6 +54,14 @@ class Responce extends React.Component {
       </div>
     );
   }
+  componentdidMount() {
+     $(document).ready(function () {
+        $('#example').DataTable();
+    });
+  
+  }
 }
+
+
 
 export default Responce;
