@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import ReactFlexyTable from "react-flexy-table";
 import "react-flexy-table/dist/index.css";
-
+import { MDBDataTable } from 'mdbreact';
 
 class Responce extends React.Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class Responce extends React.Component {
   componentWillMount() {
     axios.get("https://jsonplaceholder.typicode.com/posts").then(response => {
       // handle success
-      console.log(response.data);
+      console.log( response.data);
       this.setState({ posts: response.data });
       this.setState({ data: response });
     });
@@ -26,11 +26,15 @@ class Responce extends React.Component {
     // console.log(this.props);
     return (
       <div>
+        <MDBDataTable data="https://jsonplaceholder.typicode.com/posts" />
+
         <table className="table table-striped">
+        <thead>
           <tr>
             <th> Id</th>
             <th>Title</th>
           </tr>
+          </thead>
           {this.state.posts.map((itm, k) => {
             return (
               <tr>
@@ -39,6 +43,7 @@ class Responce extends React.Component {
               </tr>
             );
           })}
+          
         </table>
       </div>
     );
