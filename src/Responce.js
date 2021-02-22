@@ -31,7 +31,7 @@ class Responce extends React.Component {
   }
 
   render() {
-    
+    console.log(this.state.posts);
      const additionalCols = [
     {
       header: 'Actions',
@@ -60,20 +60,22 @@ const columns = [
     
     {
       header: 'title',
-      key: 'address.city',
+      key: 'city',
       td: (data) => <div> {data.title}</div>
     }
     ,
     {
       header: 'Action',
-      key: 'address.city',
+      key: 'action',
       td: (data) => <Tact vid={data.id}/>
     }
   ];
    
     return (
+      
       <div>
-     <ReactFlexyTable data={this.state.posts} columns={columns}  additionalCols={additionalCols}/>
+      
+     <ReactFlexyTable data={this.state.posts} columns={columns}  additionalCols={additionalCols}  filterable nonFilterCols={["action"]}/>
 
        
        {/*<Table  data={this.state.posts}/>*/}
