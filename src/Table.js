@@ -1,4 +1,6 @@
 import React from "react";
+import ReactFlexyTable from 'react-flexy-table'
+import 'react-flexy-table/dist/index.css'
 
 var $  = require( 'jquery' );
 var dt = require( 'datatables.net' )();

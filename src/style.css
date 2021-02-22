@@ -3,11 +3,9 @@ h1, p {
 }
 ._1OmBB thead tr
 {
-  background-color: gray;
-  color:white;
+  background-color: gray  !important;
+  color:white !important;
 }
-
-
 ._1OmBB thead th:hover {
-    background-color: #a8a6a6;
+    background-color: #a8a6a6 !important;
     }
