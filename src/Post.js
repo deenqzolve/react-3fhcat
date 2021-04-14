@@ -11,7 +11,7 @@ class Post extends React.Component {
     };
   }
 
-  txtchange = (e) => {
+  txtchange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
