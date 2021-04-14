@@ -12,7 +12,7 @@ class Post extends React.Component {
   }
 
   txtchange = e => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState({ [event.target.name]: e.target.value });
   };
 
   additem = () => {
@@ -22,7 +22,7 @@ class Post extends React.Component {
       title: this.state.title,
       body:  this.state.body
     }
-    //alert(data);
+    //console.log(data);
     axios.post('https://jsonplaceholder.typicode.com/posts', data)
       .then((response) => {
         console.log(response);
