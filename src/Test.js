@@ -7,7 +7,7 @@ class Test extends React.Component {
     this.state = {
       name:"",
       items: [],
-      loged:true
+      loged:false
     };
   }
   txtchange=e=>{

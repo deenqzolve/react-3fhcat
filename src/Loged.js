@@ -5,7 +5,7 @@ class Loged extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      loge: true
+      //loge: true
     };
   }
   render() {
