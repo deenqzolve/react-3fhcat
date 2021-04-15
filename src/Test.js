@@ -11,7 +11,7 @@ class Test extends React.Component {
     };
   }
   txtchange=e=>{
-      this.setState({[event.target.name]: e.target.value});
+      this.setState({[e.target.name]: e.target.value});
   }
    additem=()=>{
       //alert("Hai");
